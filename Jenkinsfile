@@ -14,10 +14,6 @@ pipeline
     }
     stage('Snyk - SCA Monitor on master') 
     {
-        when
-        {
-          branch 'master'
-        }
         steps 
         {
           script 
