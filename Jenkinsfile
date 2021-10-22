@@ -19,7 +19,7 @@ pipeline
           script 
           {
               echo 'Running Snyk SCA monitor - this will push the dependency list from master up to Snyk to produce and maintain an online report on all vulns (not just high)'
-              snykSecurity(snykTokenId: 'Snyk-Token-Plugin', snykInstallation: 'Snyk-Latest', failOnIssues: false, monitorProjectOnBuild: true, severity: 'low')
+              snykSecurity(snykTokenId: 'POC-token-jenkins', snykInstallation: 'Snyk-Latest', failOnIssues: false, monitorProjectOnBuild: true, severity: 'low')
           }
         }
     }
