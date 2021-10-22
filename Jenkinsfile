@@ -8,8 +8,7 @@ pipeline {
         archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
-  }
-  stage('Snyk - SCA Monitor on master') {
+    stage('Snyk - SCA Monitor on master') {
     when {
         branch 'master'
     }
